@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retirement Wealth Planner</title>
+    <style>
+    /* Global Styles */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f4f8;
+        color: #333;
+    }
+
+    .container {
+        max-width: 70%;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #0044cc;
+        font-size: 2.4em;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+
+    button {
+        background-color: #007bff;
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1.2em;
+        width: 100%;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .container {
+            max-width: 90%;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        button {
+            font-size: 1.1em;
+        }
+    }
+    </style>
+</head>
+<div class="container">
+    <br>
+    <h1>Retirement Wealth Planner</h1>
+    
+    <form action="/retirement_1" method="post" target="_blank">
+        <input type="hidden" name="question" value="What's the best way to start saving for retirement?">
+        <button type="submit">What’s the best way to start saving for retirement?</button>
+    </form>
+
+    <form action="/retirement_2" method="post" target="_blank">
+        <input type="hidden" name="question" value="How can I structure my retirement savings?">
+        <button type="submit">How can I structure my retirement savings?</button>
+    </form>
+
+    <form action="/retirement_3" method="post" target="_blank">
+        <input type="hidden" name="question" value="What should I know about taxes in retirement?">
+        <button type="submit">What should I know about taxes in retirement?</button>
+    </form>
+
+    <form action="/retirement_4" method="post" target="_blank">
+        <input type="hidden" name="question" value="How do I assess my future income needs for retirement?">
+        <button type="submit">How do I assess my future income needs for retirement?</button>
+    </form>
+    
+    <form action="/retirement_5" method="post" target="_blank">
+        <button type="submit">Simple Calculation</button>
+    </form>
+    <!-- Custom question input -->
+    <form action="/retirement_reply" method="post" target="_blank">
+        <input type="text" name="question" placeholder="Type your question here">
+        <input type="submit" value="Ask GenAI">
+    </form>
+
+    <form action="/" method="post">
+        <input type="submit" value="End">
+    </form>
+</div>
+</html>
